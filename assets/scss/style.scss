@@ -1,0 +1,189 @@
+@import "variables.scss";
+@import "mixin.scss";
+@import 'reset.scss';
+
+.container {
+    @include container;
+}
+
+nav {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-logo {
+            h2 {
+                font-weight: 300;
+                font-size: 20px;
+                color: #ffffff;
+                letter-spacing: 2px;
+            }
+        }
+
+        .ul-list {
+            display: flex;
+
+            li {
+                padding: 20px 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $list-color;
+
+
+                }
+
+            }
+        }
+
+        .menu {
+            display: none;
+            text-transform: uppercase;
+            color: $list-color;
+
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    .menu-list {
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $list-color;
+            }
+        }
+    }
+}
+
+#banner {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg_3.jpg.webp);
+
+    .banner {
+        h1 {
+            font-family: $font-family1;
+            font-size: 70px;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+}
+
+#carousel {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .carousel {
+        padding-top: 50px;
+        .carousel-box, .carousel-box-2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+           
+
+           .card{
+            width: 30%;
+            padding-bottom: 50px;
+            .carousel-image{
+                max-width: 100%;
+                img{
+                    max-width: 100%;
+                }
+            }
+            .carousel-text{
+                text-align: center;
+            }
+            .carousel-button{
+                text-align: center;
+            }
+           }
+        }
+
+    }
+}
+#add{
+    .add{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        table{
+            border-collapse: collapse;
+            th,td{
+                padding: 10px;
+                border: 1px solid black;
+                background-color: aqua;
+            }
+            td{
+                background-color: blueviolet;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:998px) {
+    nav {
+        background-color: black;
+
+        .navbar {
+            .ul-list {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+                padding: 20px 20px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}#add{
+    .add{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        table{
+            border-collapse: collapse;
+            
+            
+            th,td{
+                padding: 10px;
+                border: 1px solid black;
+                background-color: aqua;
+            }
+            td{
+                background-color: blueviolet;
+              
+
+            }
+        }
+    }
+}

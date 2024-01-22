@@ -1,0 +1,25 @@
+{
+    "services": [
+        {
+            "id": 1,
+            "image": "assets/images/offer_1.jpg.webp",
+            "price": "9.50",
+            "title": "Beef With Sausage",
+            "description": "o ciyanno fatto beyne pero domanikise nonsisemay"
+        },
+        {
+            "id": 2,
+            "image": "assets/images/offer_2.jpg.webp",
+            "price": "19.50",
+            "title": "Egg With Garlic",
+            "description": "o ciyanno fatto beyne pero domanikise nonsisemay"
+        },
+        {
+            "id": 3,
+            "image": "assets/images/offer_3.jpg.webp",
+            "price": "10.50",
+            "title": "Beef Ribs",
+            "description": "o ciyanno fatto beyne pero domanikise nonsisemay"
+        }
+    ]
+}

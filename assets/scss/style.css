@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1150px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+nav {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+}
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navbar .nav-logo h2 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+nav .navbar .ul-list {
+  display: flex;
+}
+nav .navbar .ul-list li {
+  padding: 20px 20px;
+}
+nav .navbar .ul-list li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+nav .navbar .menu {
+  display: none;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+nav .navbar .menu i {
+  margin-left: 5px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.modal .menu-list {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.modal .menu-list li {
+  list-style: none;
+}
+.modal .menu-list li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+
+#banner {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg_3.jpg.webp);
+}
+#banner .banner h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#carousel {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#carousel .carousel {
+  padding-top: 50px;
+}
+#carousel .carousel .carousel-box, #carousel .carousel .carousel-box-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#carousel .carousel .carousel-box .card, #carousel .carousel .carousel-box-2 .card {
+  width: 30%;
+  padding-bottom: 50px;
+}
+#carousel .carousel .carousel-box .card .carousel-image, #carousel .carousel .carousel-box-2 .card .carousel-image {
+  max-width: 100%;
+}
+#carousel .carousel .carousel-box .card .carousel-image img, #carousel .carousel .carousel-box-2 .card .carousel-image img {
+  max-width: 100%;
+}
+#carousel .carousel .carousel-box .card .carousel-text, #carousel .carousel .carousel-box-2 .card .carousel-text {
+  text-align: center;
+}
+#carousel .carousel .carousel-box .card .carousel-button, #carousel .carousel .carousel-box-2 .card .carousel-button {
+  text-align: center;
+}
+
+#add .add {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+#add .add table {
+  border-collapse: collapse;
+}
+#add .add table th, #add .add table td {
+  padding: 10px;
+  border: 1px solid black;
+  background-color: aqua;
+}
+#add .add table td {
+  background-color: blueviolet;
+}
+
+@media screen and (max-width: 998px) {
+  nav {
+    background-color: black;
+  }
+  nav .navbar .ul-list {
+    display: none;
+  }
+  nav .navbar .menu {
+    display: block;
+    padding: 20px 20px;
+    cursor: pointer;
+  }
+}
+#add .add {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+#add .add table {
+  border-collapse: collapse;
+}
+#add .add table th, #add .add table td {
+  padding: 10px;
+  border: 1px solid black;
+  background-color: aqua;
+}
+#add .add table td {
+  background-color: blueviolet;
+}/*# sourceMappingURL=style.css.map */
